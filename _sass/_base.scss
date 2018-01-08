@@ -1,0 +1,23 @@
+/**
+ * _sass/_base.scss
+ *
+ * Base styles for blog.
+ *
+ * Will Badart <wbadart@live.com>
+ * created: JAN 2018
+ */
+
+@import 'colors';
+
+
+html { background-color: $site-background; }
+
+h1, h2, h3, h4, h5, h6 {
+    color: $header-fg;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+p {
+    color: $body-fg;
+    font-family: 'Share Tech Mono', monospace;
+}

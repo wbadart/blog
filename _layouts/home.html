@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.global_styles | relative_url }}">
+</head>
+<body class="container">
+
+    <header class="row">
+        <center class="column">
+            <h1>{{ site.title }}</h1>
+            <p>{{ site.description }}</p>
+        </center>
+    </header>
+
+    <main>
+    {% for post in site.posts %}
+        <div class="row">
+            <div class="column">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.excerpt }}</p>
+            </div>
+        </div>
+    {% endfor %}
+    </main>
+
+    <footer>
+        <hr>
+        <div class="row">
+        {% for page in site.pages %}
+        {% if page.categories contains 'meta' %}
+            <div class="column">
+                <p><a href="{{ page.url }}">{{ page.title }}</a></p>
+            </div>
+        {% endif %}
+        {% endfor %}
+        <center class="row">
+            <p>&copy; 2018 <a href="https://wbadart.info">Will Badart</a></p>
+        </center>
+    </footer>
+
+</body>
+</html>
