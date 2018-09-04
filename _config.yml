@@ -14,7 +14,7 @@ excerpt_separator: <!-- MORE -->
 
 # Build settings
 markdown: kramdown
-remote_theme: jekyll-theme-dark-minimal
+remote_theme: wbadart/jekyll-theme-dark-minimal
 plugins:
   - jekyll-feed
   - jekyll-paginate
