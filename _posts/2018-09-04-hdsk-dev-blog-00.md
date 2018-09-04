@@ -42,12 +42,8 @@ be linking them in future posts. For now, here's the talk by [Rich Hickey<i
 class="fa fa-external-link"></i>][rich]{:target="_blank"} which got me started
 down this whole rabbit hole:
 
-<iframe width="560" height="315" style="margin:auto;display:block"
-        src="https://www.youtube-nocookie.com/embed/rI8tNMsozo0?rel=0"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen>
-</iframe>
+{% include youtube.html v="rI8tNMsozo0" %}
+
 <br>
 
 Unfortunately, the data science ecosystem around Haskell (many believe) is
