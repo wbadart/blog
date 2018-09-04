@@ -21,7 +21,6 @@ gem 'jekyll-theme-dark-minimal', '~> 0.1.1'
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-paginate"
-  gem "jekyll-youtube"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
