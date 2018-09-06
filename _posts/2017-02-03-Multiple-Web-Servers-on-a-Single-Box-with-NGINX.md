@@ -12,12 +12,11 @@ layout: post
 
 I wanted to take a quick break from our normal programming to share with you a nifty little feature of [NGINX](https://www.nginx.com/) I recently learned about. If you're here for my next ethics post, you'll have to wait for another couple days.
 
+<!-- MORE -->
 
 # End goal
 
 As I hinted at in the title, we're going to use NGINX to host "as many websites as you want" on a single machine. I'm not just talking about static file servers, but any arbitrary web servers on the internet (though we'll be focusing strictly on local servers). Our configuration will specify which of a number of servers will handle a request based on the domain of that incoming request. I've been looking for a simple and effective way to do this for some time now, since I'm on way too strict a budget for a second [EC2 instance](https://aws.amazon.com/ec2/). At first I thought I'd find my solution in [virtual hosting](https://en.wikipedia.org/wiki/Virtual_hosting) (virtual hosts are known in NGINX speak as "[server blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/)"). It turns out, however, that my knight in shining armor was the [reverse proxy](https://www.nginx.com/resources/glossary/reverse-proxy-server/).
-
-<!-- more -->
 
 **A word of warning:** This isn't a great fix for high-traffic sites, as *all* requests for *all* of your websites are going to be hitting the same metal. I'm "lucky" enough that with the traffic on my sites, this isn't really an issue for me.
 

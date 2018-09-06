@@ -13,11 +13,12 @@ layout: post
 
 Episode two of the Ethics in Computing Podcast is a discussion of the Notre Dame Computer Science program. Please find the audio and transcript below.
 
+<!-- MORE -->
+
 But first, for my non-Notre Dame readers out there, here's a little background for the clip you're about to hear:
 When you first become a domer, you have no major, and are in the same college as all 2,000 of your classmates: [First Year of Studies](https://firstyear.nd.edu). What you do have is an *intended college* (and, if you're one of a lucky few, an intended major). The fledgling engineers, rather than taking *Intro to Chemical Engineering* or *Fundamentals of Computing*, take a two semester series in "Engineering." It's like a dim sum restaurant of engineering disciplines, structured around a few projects that focus on one field or another. This class is a trade-off for our engineers: those freshmen who stick with engineering are given a broad (if cursory) introduction to engineering concepts (and MATLAB), but it comes at the cost of being a semester or even a year behind peers at other universities who may have been diving into major material from day one.
 
 <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/321980771&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-<!-- MORE -->
 
 I'm sure I've mentioned before that I think the first year engineering program was one of the most important parts of my education at Notre Dame. It's easy to fall into the trap of speculating how much farther ahead you'd have been without the program; I've done it myself. In reality though, I've observed that we as a class of computer scientists are **passionate** and **competitive** (sometimes competitive with one another but mostly in the sense that we often do more than just stand our ground against CSers from other universities).
 

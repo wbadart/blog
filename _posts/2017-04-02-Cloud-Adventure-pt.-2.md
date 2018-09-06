@@ -12,9 +12,9 @@ layout: post
 
 This is a casual sequel to [last week's tutorial](https://blog.wbadart.info/2017/03/31/NGINX-HTTPS) on getting nginx set up with HTTPS. Towards the end of that post, I dropped a reference to a new subdomain on `wbadart.info`, `cloud.wbadart.info`. This new record points to my installation of [Nextcloud](https://nextcloud.com), an open source, self-hosted alternative to such cloud-storage services as Google Drive and Box.
 
-Here's a quick tutorial on getting Nextcloud set up behind your PHP-enabled web server.
-
 <!-- MORE -->
+
+Here's a quick tutorial on getting Nextcloud set up behind your PHP-enabled web server.
 
 ## Nextcloud tutorial
 

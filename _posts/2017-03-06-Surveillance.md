@@ -12,9 +12,9 @@ layout: post
 
 This post is a reply to FBI Director James Comey and Deputy Attorney General Sally Yates's joint 2015 statement to the Senate Judiciary Committee.
 
-I found the rhetoric of the statement refreshing: you can see in it the careful consideration to not frame this issue as *security vs. privacy*. Instead, the authors explicitly stated privacy as a right of the American people, supported by both the Constitution and by Congress. Of course, this was not the primary thesis of the statement. It felt as though the statement's purpose was to ease its readers into more harsh stances on encryption; it's always "privacy through encryption is great, but...".
-
 <!-- MORE -->
+
+I found the rhetoric of the statement refreshing: you can see in it the careful consideration to not frame this issue as *security vs. privacy*. Instead, the authors explicitly stated privacy as a right of the American people, supported by both the Constitution and by Congress. Of course, this was not the primary thesis of the statement. It felt as though the statement's purpose was to ease its readers into more harsh stances on encryption; it's always "privacy through encryption is great, but...".
 
 I can totally see where they're coming from. They are two of the highest-ranking justice officials in the nation, and encryption is a growing barrier to their jobs and the jobs of their agents. Within our lifetimes, a huge swath of global communication has gone from "ripe for the picking" for justice officials, to "mathematically un-scrambleable". For this reason, I'm not opposed to my government coercing the provision of physical keys for encryption systems (in the same way it can coerce entry to a physical premises) when that coercion does not infringe on other rights (this goes back to the password vs. fingerprint discussion).
 

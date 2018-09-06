@@ -11,9 +11,7 @@ layout: post
 ---
 
 
-Over the weekend I read *A Portrait of J. Random Hacker*, an article about the people of "the hacker community" according to a Usenet survey (I couldn't find any information about the author other than that his first name might be "James"). The article discusses a few different attributes of "the hacker," to the end of showing outsiders who they are and what makes them tick. In general, the article rejected the pop culture hacker profile (unkempt, overweight basement dweller who hacks day and night while pizza boxes and Mountain Dew bottles pile up around him). Instead, this article portrays hackers as open-minded, avid intellectuals.
-
-<!-- MORE -->
+Over the weekend I read *A Portrait of J. Random Hacker*, an article about the people of "the hacker community" according to a Usenet survey (I couldn't find any information about the author other than that his first name might be "James"). The article discusses a few different attributes of "the hacker," to the end of showing outsiders who they are and what makes them tick. <!-- MORE -->In general, the article rejected the pop culture hacker profile (unkempt, overweight basement dweller who hacks day and night while pizza boxes and Mountain Dew bottles pile up around him). Instead, this article portrays hackers as open-minded, avid intellectuals.
 
 > Intelligent.  Scruffy.  Intense.  Abstracted.  Surprisingly for a sedentary profession, more hackers run to skinny than fat; both extremes are more common than elsewhere.  Tans are rare.
 > *[...]*

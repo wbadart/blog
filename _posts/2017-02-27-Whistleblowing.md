@@ -8,9 +8,9 @@ categories:
 layout: post
 ---
 
-I spent last summer (2016) in Washington D.C. working for the consulting company Booz Allen Hamilton. Before that point, I thought, what with the Internet, 24-hour news cycle, and all that, that I was pretty well immersed in the goings-on and machinations of our government. But being physically there, living as a **resident** of the capital city, made that immersion take on a whole new meaning. My employer's biggest client was, and continues to be, the Department of Defense. The White House, Office of Personnel Management, and International Monetary Fund were features of my morning commute. I had a job interview at a federal agency. All this is to say that I'm fascinated with the machinations of our government, and hope to one day participate.
+I spent last summer (2016) in Washington D.C. working for the consulting company Booz Allen Hamilton. Before that point, I thought, what with the Internet, 24-hour news cycle, and all that, that I was pretty well immersed in the goings-on and machinations of our government. But being physically there, living as a **resident** of the capital city, made that immersion take on a whole new meaning. <!-- MORE -->My employer's biggest client was, and continues to be, the Department of Defense. The White House, Office of Personnel Management, and International Monetary Fund were features of my morning commute. I had a job interview at a federal agency. All this is to say that I'm fascinated with the machinations of our government, and hope to one day participate.
 
-That's why the issue of whistleblowing is of distinct personal interest to me.<!-- MORE -->
+That's why the issue of whistleblowing is of distinct personal interest to me.
 
 At its core, whistleblowing, like many other aspects of our democracy, is about **government accountability**. But unlike checks and balances, term limits, and the like, whistleblowing is particularly complex for being extra-legal, aimed often at bringing down unjust laws or corrupt officials. These truly are noble motivations, but it would be unfair to represent them as the only motivations people have for whistleblowing. I've looked, and there isn't a whole lot of data here, but it isn't hard to imagine fame or ego driving the decision to leak.
 

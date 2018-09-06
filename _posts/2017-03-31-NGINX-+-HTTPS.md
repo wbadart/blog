@@ -13,9 +13,9 @@ layout: post
 
 Below is a long-winded exposition of my recent sysadmin tribulations. To cut to the chase (the tutorial on configuring NGINX with HTTPS), please follow [this anchor](#Tutorial).
 
-Some of you more vigilant readers may have noticed this week that the blog was down for a few days. This was because of the adventure I was having with [iRedMail](http://iredmail.org) and with HTTPS.
-
 <!-- MORE -->
+
+Some of you more vigilant readers may have noticed this week that the blog was down for a few days. This was because of the adventure I was having with [iRedMail](http://iredmail.org) and with HTTPS.
 
 ## Genesis
 

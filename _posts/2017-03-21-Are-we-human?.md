@@ -12,9 +12,9 @@ layout: post
 
 Well, more like, "are *they* human?" This post will be an exploration of corporate personhood.
 
-The way I see it, corporate personhood or "corporations as people" is the concept treating businesses as legally identical to living, breathing people. Legal corporations are a natural evolution of human organization; they allow for ownership of land, capital, etc. to extend beyond the lifetime of an individual, and for people to distribute liability amongst themselves to amortize risk. John Coffee, in July 28, 2014's [Morning Edition](http://npr.org/programs/morning-edition) suggested that the Catholic church may have been history's first corporation (in the modern sense of the word) as it was likely the first organization to buy land in its own name (which I thought was interesting).
-
 <!-- MORE -->
+
+The way I see it, corporate personhood or "corporations as people" is the concept treating businesses as legally identical to living, breathing people. Legal corporations are a natural evolution of human organization; they allow for ownership of land, capital, etc. to extend beyond the lifetime of an individual, and for people to distribute liability amongst themselves to amortize risk. John Coffee, in July 28, 2014's [Morning Edition](http://npr.org/programs/morning-edition) suggested that the Catholic church may have been history's first corporation (in the modern sense of the word) as it was likely the first organization to buy land in its own name (which I thought was interesting).
 
 So it seems that corporations are a natural part of life, but we obviously can't treat them **just like** people; people can go to jail, die, procreate (I suppose you could draw corporate parallels to all those things but if you genuinely believe that identical treatment for people and corporations would be legally functional, I'd love to hear your reasoning).
 

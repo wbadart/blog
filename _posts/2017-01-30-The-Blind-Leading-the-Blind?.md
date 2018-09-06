@@ -12,11 +12,11 @@ layout: post
 
 No matter how you spin it, computer science is a young field, especially compared to the other industries Domers go to. As such, there's still a lot to figure out (in other news, *Water: Wet*). Today I want to talk about the figuring we need to do with respect to career management, and I'll do so by sharing my personal experiences in the matter.
 
+<!-- MORE -->
+
 ![Map from Dora](/assets/images/map.jpg)
 
 I consider the first job of my career to be my Summer 2016 gig with [Booz Allen Hamilton](http://boozallen.com), but I think my career started much earlier. By the summer after my high school graduation, I was strongly entertaining the notion of being a computer science major. I was already fascinated with programming. As a result, I did what I could to learn: I split my time that summer between a full-time job at a [hotel](http://hotelsorrento.com) and my personal website. Oh, and friends, I had some friends. Yeah.
-
-<!-- more -->
 
 So I kept up my projects, kept at it with [Code Academy](http://codeacademy.com), and started studying CS. When I started at ND, I was pretty aggressive about finding an on-campus job. In October, I connected with [The Kaneb Center for Teaching and Learning](http://kaneb.nd.edu) and started working in their [Learning Technology Lab](http://learning.nd.edu). I learned a lot from this job, about video production and, more importantly, web development. When I started, I knew enough from Code Academy to get hired, but I didn't even know what [Bootstrap](http://getbootstrap.com) was. By the end of the school year, I had deployed my first [Angular](http://angularjs.org) application (it was a piece of garbage, but in production nonetheless). More than anything else, I consider my first year at the Kaneb Center a testament to the hands-on imperative.
 

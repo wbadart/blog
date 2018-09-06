@@ -13,11 +13,11 @@ layout: post
 
 Like the issue of corporate personhood we discussed last time, most of my exposure to net neutrality has been one-sided (the affirmative side, that is). This wasn't conscious or on purpose, just something I've noticed in retrospect.
 
+<!-- MORE -->
+
 Now, with a more heterogeneous exposure to the topic, I can say that **both** sides are mired in somewhat empty rhetoric that can be difficult to cut through on your way to the facts and the data. While one side lauds the *openness* and *freedom* of the Internet, the other stand up for the rights of capitalist **American** companies against our wicked government cronies.
 
 Below you'll find a quick roadmap to guide you through (or perhaps more accurately, fly you over) the swamp.
-
-<!-- MORE -->
 
 ## Pro Neutrality
 

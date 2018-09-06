@@ -14,12 +14,14 @@ layout: post
 
 I recently read a pretty compelling argument for why programming is not a super power.
 
+<!-- MORE -->
+
 > Given:
 >
 > P → Q : If programming is a super power, then humans cannot program.
 >
->     Superpower is a popular culture term for a fictional superhuman ability. (wikipedia — superpower)
->     Superhuman qualities are qualities that exceed those found in humans. (wikipedia — Superhuman)
+> Superpower is a popular culture term for a fictional superhuman ability. (wikipedia — superpower)
+> Superhuman qualities are qualities that exceed those found in humans. (wikipedia — Superhuman)
 >
 > -Q: humans can program
 >
@@ -29,7 +31,7 @@ I recently read a pretty compelling argument for why programming is not a super 
 >
 > -Q (humans can program)
 >
-> — — — — — — — — — — — — — — — — — -
+> — — — — — — — — — — — — — — — — —
 >
 > -P (Programming is not a super power)
 >

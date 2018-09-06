@@ -12,9 +12,9 @@ layout: post
 
 Before exploring the issue of universal basic income (UBI) for this class, I guess you could say I was against it, but only by default as a self-identified right-leaning libertarian; undertaking such a vast new program would require massive bureaucratic undertaking and money sink *at best*.
 
-What I'd never considered before was UBI in the context on an automated economy. It's easy to just frame the debate under the current status quo, in which basically all able adults work, or are spouses of someone who works. And that's the entirety of that socioeconomic contract: you sell your labor so you and your family can eat. This works because our economy has enough jobs to keep unemployment moderately low. As soon as that paradigm shifts-- as soon as automatic processes replace people with any sort of scale-- that model falls apart. The system (from economic and governmental perspectives) isn't built to handle **mass** unemployment.
-
 <!-- MORE -->
+
+What I'd never considered before was UBI in the context on an automated economy. It's easy to just frame the debate under the current status quo, in which basically all able adults work, or are spouses of someone who works. And that's the entirety of that socioeconomic contract: you sell your labor so you and your family can eat. This works because our economy has enough jobs to keep unemployment moderately low. As soon as that paradigm shifts-- as soon as automatic processes replace people with any sort of scale-- that model falls apart. The system (from economic and governmental perspectives) isn't built to handle **mass** unemployment.
 
 One fascinating example to consider is the potential impact of self-driving cars on the trucking industry, which, even excluding the support industry around it, employs as many as **5 million people**, or about 2.5% of the working-aged population of the country. Throw in taxi drivers, bus drivers, and anyone else who drives a car for a living, and you're looking at a very good sized subset of the population relatively suddenly displaced from work.
 
