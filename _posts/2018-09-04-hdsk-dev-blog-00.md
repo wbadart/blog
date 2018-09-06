@@ -44,8 +44,6 @@ down this whole rabbit hole:
 
 {% include youtube.html v="rI8tNMsozo0" %}
 
-<br>
-
 Unfortunately, the data science ecosystem around Haskell (many believe) is
 [pretty sparse<i class="fa fa-external-link"></i>][linkedin
 article]{:target="_blank"}, so adoption is lagging.
