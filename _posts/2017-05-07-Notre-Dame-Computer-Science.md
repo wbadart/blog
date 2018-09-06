@@ -25,7 +25,7 @@ For me, as someone who (as a freshman) wasn't just unsure if I wanted CS but as 
 
 (Brief aside: I know my experience, that of a single individual, can't be the sole argument for the value of the first year engineering program. All I mean to do is present the potential impact that the program can have on at least some of its individual participants.)
 
-![](/assets/images/matlab.png)
+![](/assets/images/matlab.png){:width="400"}
 
 Sophomore year was a strong follow up to the post-MATLAB glow. I'm glad we were taught C for Fundamentals of Computing I: C in general doesn't hold your hand, so it's harder to fudge things. Also, [C-like syntax](https://en.wikipedia.org/wiki/List_of_C-family_programming_languages) is everywhere, so having that language as our base set us up for fluency in a multitude of other languages. There are definitely disadvantages to starting with C, chief among which is (in my opinion) a hard-wiring towards imperative programming which must often be unlearned (or at least reduced) at some point down the line. Last summer, after making a concerted effort to write more modular and functional code for Booz Allen, my code quality and the efficiency of the application grew enormously.
 
