@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.wbadart.info"
 github_username:  wbadart
 
-paginate: 8
+paginate: 5
 excerpt_separator: <!-- MORE -->
 
 # Build settings
