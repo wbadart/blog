@@ -79,7 +79,12 @@ Let's deconstruct that.
 
 - The `--webroot` flag specifies "webroot" mode, and `-w /var/www/html` specifies the actual location of the webroot. If you were feeling adventurous, you might try excluding this, as my certificates aren't installed to `/var/www/html`, and in fact, this blog isn't even served out of there.
 
-- Finally, each `-d DOMAIN` adds a domain name to be covered by the certificate. This includes any subdomains (e.g., when I ran this command, I used `-d wbadart.info -d blog.wbadart.info`).
+- Finally, each `-d DOMAIN` adds a domain name to be covered by the certificate. This includes any subdomains (e.g., when I ran this command, I used the following).
+
+
+```
+-d wbadart.info -d blog.wbadart.info
+```
 
 You'll be taken through a pretty straight forward prompt, and will end up with some new files populating `/etc/letsencrypt`.
 
@@ -87,7 +92,9 @@ You'll be taken through a pretty straight forward prompt, and will end up with s
 
 The setup I recommend you use is laid out like this:
 
-You have one main HTTPS server which includes virtual hosts for each service running off this host. Each of these virtual hosts will spin up two virtual servers, an HTTPS one (the "real" one) and an HTTP one (which just redirects to HTTPS). With this arrangement, any new virtual host will **automatically** be imbued with that sweet sweet SSL goodness (just make sure to update your certs to include the `server_name`, e.g. I recently added `cloud.wbadart.info` so I ran the command `certbot certonly --webroot -w /var/www/html -d wbadart.info -d blog.wbadart.info -d cloud.wbadart.info`).
+You have one main HTTPS server which includes virtual hosts for each service running off this host. Each of these virtual hosts will spin up two virtual servers, an HTTPS one (the "real" one) and an HTTP one (which just redirects to HTTPS). With this arrangement, any new virtual host will **automatically** be imbued with that sweet sweet SSL goodness. Just make sure to update your certs to include the `server_name`, e.g. I recently added `cloud.wbadart.info` so I ran the command
+
+    certbot certonly --webroot -w /var/www/html -d wbadart.info -d blog.wbadart.info -d cloud.wbadart.info
 
 Open up your main NGINX configuration at `/etc/nginx/nginx.conf` and add the following lines to the `http` block, probably right below `ssl_prefer_server_ciphers on;`:
 
@@ -107,9 +114,10 @@ $ sudo service nginx reload
 
 ### Five - adding a site/ profit
 
-For the purposes of this example, the first HTTPS-enabled server we'll be creating is a simple static file server. Add the following to the new file `/etc/nginx/sites-enabled/example.conf`:
+For the purposes of this example, the first HTTPS-enabled server we'll be creating is a simple static file server. Add the following to the new file:
 
 ```
+# /etc/nginx/sites-enabled/example.conf
 server {
     listen 80;
     listen [::]:80;
@@ -128,7 +136,13 @@ server {
 }
 ```
 
-Now simple drop some random `index.html` into `/var/www/html` and visit `mydomain.com`! If you get a 403 or something along those lines, try `chown -R www-data:www-data /var/www/html`. Also you'll need to test and reload your configuration (see [step 4](#Four-test-and-reload-configuration)).
+Now simple drop some random `index.html` into `/var/www/html` and visit `mydomain.com`! If you get a 403 or something along those lines, try
+
+```
+chown -R www-data:www-data /var/www/html
+```
+
+Also you'll need to test and reload your configuration (see [step 4](#Four-test-and-reload-configuration)).
 
 Try visiting it by explicitly entering `http://mydomain.com` in the address bar to see that redirect in action.
 
