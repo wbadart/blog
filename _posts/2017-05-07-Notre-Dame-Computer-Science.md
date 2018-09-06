@@ -44,7 +44,19 @@ The last major class of note sophomore year was Unix. I'll try not to fanboy too
 
 In junior year, our paths as a class began to diverge as study abroad shuffled courses between our semesters. I took DS, Comp Arch, and Theory in the Fall (plus a couple electives) and Paradigms, OS, and Ethics (sup) in the Spring (plus electives/ prob stats). I really can't complain about any of these courses: I feel like I've been getting good learning from them. I'd only mention that I think Paradigms has the potential to be much more than it was; we got great breadth, but at cost of any real depth.
 
-I'd cut out most of the frills (regex, Android, x86, cherrypy, ...) and lay it on way thicker with the Scheme/FP. And you know it doesn't even have to be Scheme: I think we could have had some very effective FP lessons in Javascript. Show us map/filter/reduce! Show us binding and partial application! Functions as first class objects! Closures (just maybe without the lambda calculus)! Those things all sound exotic from a C/imperative perspective, but they're just your average Tuesday in JS. I think a deeper dive into FP in JS could have given the class a better understanding of the benefits and relevance of FP, instead of leaving many with the nagging feeling of not having learned anything for the "real world." I'd like to add that event-driven programming is a snap in JS; it's hard to get more explicit than `window.onresize = function(){..` or `$('button').on('click', do_stuff)`. You can tie that in to the Go stuff and suddenly, you've got an awesome final project: a full-stack web application that explores FP and event-driven programming in the front end and imperative and concurrent programming in the back. I guess the stack misses any real opportunity for OOP, but I think a lot of us had more than our fill of that from Data Structures.
+I'd cut out most of the frills (regex, Android, x86, cherrypy, ...) and lay it on way thicker with the Scheme/FP. And you know it doesn't even have to be Scheme: I think we could have had some very effective FP lessons in Javascript. Show us map/filter/reduce! Show us binding and partial application! Functions as first class objects! Closures (just maybe without the lambda calculus)! Those things all sound exotic from a C/imperative perspective, but they're just your average Tuesday in JS. I think a deeper dive into FP in JS could have given the class a better understanding of the benefits and relevance of FP, instead of leaving many with the nagging feeling of not having learned anything for the "real world." I'd like to add that event-driven programming is a snap in JS; it's hard to get more explicit than
+
+```
+window.onresize = function(){...
+```
+
+or
+
+```
+$('button').on('click', do_stuff)
+```
+
+You can tie that in to the Go stuff and suddenly, you've got an awesome final project: a full-stack web application that explores FP and event-driven programming in the front end and imperative and concurrent programming in the back. I guess the stack misses any real opportunity for OOP, but I think a lot of us had more than our fill of that from Data Structures.
 
 For all its quirks and growing pains, I **love** Notre Dame CSE -- the program guided me to my passion and set me up with a bright future full of learning and opportunity. I'm grateful to the faculty who work tirelessly for me and my classmates as we prepare to graduate (be it in twelve days or twelve months) and make our marks on the world.
 

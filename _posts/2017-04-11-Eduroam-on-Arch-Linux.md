@@ -40,6 +40,12 @@ Before we begin, I just want to mention that I have posts about **AI and automat
     $ systemctl enable wpa_supplicant connman
     ```
 
-4. Restart both of those services to connect (`systemctl restart wpa_supplicant connman`). Alternatively, reboot your computer to make sure the whole auto-startup business works. This is the profit step; you should be connected once it's done.
+4. Restart both of those services to connect.
+
+    ```
+    $ systemctl restart wpa_supplicant connman
+    ```
+
+    Alternatively, reboot your computer to make sure the whole auto-startup business works. This is the profit step; you should be connected once it's done.
 
 An interesting thing that I'll note before leaving you is that when I'm connected to Eduroam, I've found that I can access the internet just fine (browse the web, curl around, ssh into the blog server, etc.) but I don't get replies from `ping`s. Not sure what the deal is here, but just thought I'd mention it FYSA.

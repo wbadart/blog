@@ -24,7 +24,16 @@ Here's a quick tutorial on getting Nextcloud set up behind your PHP-enabled web 
 
 3. Visit your site at `setup-nextcloud.php`, i.e. `mydomain.com/setup-nextcloud.php` and follow the prompt.
 
-And that's about all she wrote. Most of the snags I ran into were solved either by doing `chown -R www-data:www-data /var/www/html`, `chmod -R 755 /var/www/html` and starting over from scratch.
+And that's about all she wrote. Most of the snags I ran into were solved either by doing
+
+```
+$ chown -R www-data:www-data /var/www/html
+...
+$ chmod -R 755 /var/www/html
+...
+```
+
+(And by starting over from scratch).
 
 {% include youtube.html v="NeSuNi6YARU" %}
 
