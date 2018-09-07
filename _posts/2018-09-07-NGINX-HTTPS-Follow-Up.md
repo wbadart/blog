@@ -17,6 +17,8 @@ fa-external-link"></i>][certbot github]{:target="_blank"} on GitHub) I was
 using v0.22.2, which is 5 minor releases behind the current 0.27.1 version.
 And, in my usage of the tool, I've found that NGINX mode has come a long way.
 
+<!-- MORE -->
+
 Now, all you need to do is have a bare-bones configuration in `sites-enabled`
 for `certbot` to detect, e.g.:
 
