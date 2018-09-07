@@ -79,12 +79,7 @@ Let's deconstruct that.
 
 - The `--webroot` flag specifies "webroot" mode, and `-w /var/www/html` specifies the actual location of the webroot. If you were feeling adventurous, you might try excluding this, as my certificates aren't installed to `/var/www/html`, and in fact, this blog isn't even served out of there.
 
-- Finally, each `-d DOMAIN` adds a domain name to be covered by the certificate. This includes any subdomains (e.g., when I ran this command, I used the following).
-
-
-```
--d wbadart.info -d blog.wbadart.info
-```
+- Finally, each `-d DOMAIN` adds a domain name to be covered by the certificate. This includes any subdomains (e.g., when I ran this command, I used `-d wbadart.info -d blog.wbadart.info`).
 
 You'll be taken through a pretty straight forward prompt, and will end up with some new files populating `/etc/letsencrypt`.
 
@@ -94,9 +89,9 @@ The setup I recommend you use is laid out like this:
 
 You have one main HTTPS server which includes virtual hosts for each service running off this host. Each of these virtual hosts will spin up two virtual servers, an HTTPS one (the "real" one) and an HTTP one (which just redirects to HTTPS). With this arrangement, any new virtual host will **automatically** be imbued with that sweet sweet SSL goodness. Just make sure to update your certs to include the `server_name`, e.g. I recently added `cloud.wbadart.info` so I ran the command
 
-    certbot certonly --webroot -w /var/www/html -d wbadart.info -d blog.wbadart.info -d cloud.wbadart.info
+    $ certbot certonly --webroot -w /var/www/html -d wbadart.info -d blog.wbadart.info -d cloud.wbadart.info
 
-Open up your main NGINX configuration at `/etc/nginx/nginx.conf` and add the following lines to the `http` block, probably right below `ssl_prefer_server_ciphers on;`:
+Open up your main NGINX configuration at `/etc/nginx/nginx.conf` and add the following lines to the `http` block, probably right below `ssl_prefer_server_ciphers`:
 
 ```
 ssl_certificate /etc/letsencrypt/live/mydomain.com/fullchain.pem;
@@ -138,8 +133,8 @@ server {
 
 Now simple drop some random `index.html` into `/var/www/html` and visit `mydomain.com`! If you get a 403 or something along those lines, try
 
-```
-chown -R www-data:www-data /var/www/html
+```bash
+$ chown -R www-data:www-data /var/www/html
 ```
 
 Also you'll need to test and reload your configuration (see [step 4](#Four-test-and-reload-configuration)).
@@ -170,7 +165,7 @@ And that should set you up!
 If you install your certificates using the instructions above, the following should correctly renew your certificates when the time comes (after 90 days):
 
 ```
-sudo certbot certonly --force-renewal -d domain.com -d other.domain.com
+$ sudo certbot certonly --force-renewal -d domain.com -d other.domain.com
 ```
 
 Where you enter `-d domain` for all the domains and subdomains that are covered by the certificate.
