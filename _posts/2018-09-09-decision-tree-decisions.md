@@ -41,7 +41,8 @@ tree model. This is the complete definition as of commit
 On a high level, this definition corresponds closely to the canonical (if you
 want to call it that) example of an n-ary tree data type:
 
-    data Tree a = Node a [Tree a] | Leaf a
+    data Tree a = Node a [Tree a]
+                | Leaf a
 
 In fact, if you ignore that predicate tacked on to each node (`tup -> Bool`;
 more on that in a moment), it *is* this definition, where `a` is the type
