@@ -3,9 +3,21 @@
     <div class="row">
         <p class="column">{{ site.description }}</p>
         <p class="column maybe-right">
-            <a href="/archive">Archive</a>
-            <a href="/series">Series</a>
-            <a href="/tags">Tags</a>
+            {% if page.title != "Archive" %}
+              <a href="/archive">Archive</a>
+            {% else %}
+              Archive
+            {% endif %}
+            {% if page.title != "Series" %}
+              <a href="/series">Series</a>
+            {% else %}
+              Series
+            {% endif %}
+            {% if page.title != "Tags" %}
+              <a href="/tags">Tags</a>
+            {% else %}
+              Tags
+            {% endif %}
         </p>
     </div>
 </header>
