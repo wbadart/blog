@@ -3,11 +3,13 @@ layout:    base
 permalink: /tags
 ---
 
+<h2>Tags</h2>
+
 <div class="row tag-panel">
     {% assign sorted-tags = site.tags | sort %}
     {% for tag in sorted-tags %}
       <div class="column column-50">
-          <h2><small>#&nbsp;</small>{{ tag[0] }}</h2>
+          <h3><small>#&nbsp;</small>{{ tag[0] }}</h3>
           <ul>
               {% for post in tag[1] %}
                 <li class="bigger">

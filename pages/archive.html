@@ -3,12 +3,14 @@ layout: base
 permalink: /archive
 ---
 
+<h2>Archive</h2>
+
 {% assign groups = site.posts
     | group_by_exp:"post", "post.date | date:'%B %Y'" %}
 <ul style="list-style:none">
     {% for date in groups %}
       <li>
-          <h2>{{ date.name }}</h2>
+          <h3>{{ date.name }}</h3>
           <ul>
               {% for post in date.items %}
                 <li class="bigger">
