@@ -33,9 +33,10 @@ footer
   font-size:  0.7em
   i
     margin-left: 0 !important
-  @media(min-width:640px)
-    p:nth-child(2)
-      text-align: right
+
+@media(min-width:640px)
+  p.column.maybe-right:nth-child(2)
+    text-align: right
 
 h1, h2, h3, h4, h5, h6
   color: $header-fg
@@ -116,3 +117,10 @@ code
 iframe
   display: block
   margin: auto auto 1em auto
+
+.tag-panel
+  flex-wrap: wrap
+  .column
+    margin-bottom: 1.7em
+    @media(max-width:640px)
+      max-width: 100% !important

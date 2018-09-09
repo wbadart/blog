@@ -1,0 +1,22 @@
+---
+layout:    base
+permalink: /tags
+---
+
+<div class="row tag-panel">
+    {% assign sorted-tags = site.tags | sort %}
+    {% for tag in sorted-tags %}
+      <div class="column column-50">
+          <h2><small>#&nbsp;</small>{{ tag[0] }}</h2>
+          <ul>
+              {% for post in tag[1] %}
+                <li class="bigger">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+          </ul>
+      </div>
+    {% endfor %}
+</div>
+
+<hr>
