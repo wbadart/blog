@@ -2,11 +2,11 @@ title:  blog.willbadart.com
 author: Will Badart
 email: wbadart@live.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the blog of <a href="https://wbadart.info" target="_blank">Will Badart<i class="fa fa-external-link"></i></a>.
+  This is the blog of <a href="https://willbadart.com" target="_blank">Will Badart<i class="fa fa-external-link"></i></a>.
 cclicense: by-nc
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.wbadart.info"
+url: "https://blog.willbadart.com"
 github_username:  wbadart
 
 paginate: 5
