@@ -3,11 +3,12 @@ layout: post
 title:  Comparing Linked Lists in C
 tags:
   - programming
-  - c++
+  - c
 ---
 
 As I may have mentioned briefly in the Coffee Log, part of my morning routine
-is to solve a problem or two on [HackerRank][hackerrank], just to stay frosty.
+is to solve a problem or two on [HackerRank<i class="fa
+fa-external-link"></i>][hackerrank]{:target="_blank"}, just to stay frosty.
 I've decided to start writing about my solutions just as an act of reflection
 to help me fully comprehend the questions.
 
@@ -73,13 +74,14 @@ and if all the rest are equal:
 
 And there you have it!
 
-Now, just for fun, let's make a version which is [tail call optimizable][SO]
-(in a slight oversimplification: a recursive function which the compiler can
-turn into an iterative one to avoid the overhead of stack frame allocation).
-Because the current version operates on the return value of the recursive call
-(ands it with the logical equality of the current pair), it can't; we need the
-recursive call to stand on its own. We can do this by adding an accumulator
-parameter (this is my usual go-to for tail call optimization).
+Now, just for fun, let's make a version which is [tail call optimizable<i
+class="fa fa-external-link"></i>][SO]{:target="_blank"} (in a slight
+oversimplification: a recursive function which the compiler can turn into an
+iterative one to avoid the overhead of stack frame allocation).  Because the
+current version operates on the return value of the recursive call (ands it
+with the logical equality of the current pair), it can't; we need the recursive
+call to stand on its own. We can do this by adding an accumulator parameter
+(this is my usual go-to for tail call optimization).
 
     bool compare_lists(Node* head1, Node* head2, bool eq) {
         if(!head1 && !head2)
