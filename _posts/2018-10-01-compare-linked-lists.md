@@ -24,34 +24,40 @@ came to mind first. So, step one, cover the base case: comparing two empty
 lists. From the wording of the problem, I inferred that two empty lists *are*
 considered equal.
 
-    bool compare_lists(Node* head1, Node* head2) {
-        if(!head1 && !head2)
-            return true;
-        // ...
-    }
+<pre><code class="c">
+bool compare_lists(Node* head1, Node* head2) {
+    if(!head1 && !head2)
+        return true;
+    // ...
+}
+</code></pre>
 
 Now, if we use the recursive pattern, we only get a narrow view of the list;
 essentially just the current element. So how can we know if they have unequal
 lengths? Simply, if you reach the end of one before you reach the end of the
 other. This can be expressed as:
 
-    bool compare_lists(Node* head1, Node* head2) {
-        // ...
-        if(!head1 && head2 || head1 && !head2)
-            return false;
-    }
+<pre><code class="c">
+bool compare_lists(Node* head1, Node* head2) {
+    // ...
+    if(!head1 && head2 || head1 && !head2)
+        return false;
+}
+</code></pre>
 
 Fortunately, we have a name for a condition which is true when exactly one of
 its two arguments is true: *XOR*. So, replacing our rather verbose length
 condition with XOR, we have:
 
-    bool compare_lists(Node* head1, Node* head2) {
-        if(!head1 && !head2)
-            return true;
-        else if(head1 ^ head2)
-            return false;
-        // ...
-    }
+<pre><code class="c">
+bool compare_lists(Node* head1, Node* head2) {
+    if(!head1 && !head2)
+        return true;
+    else if(head1 ^ head2)
+        return false;
+    // ...
+}
+</code></pre>
 
 I found that depending on your compiler settings, you may need to cast `head1`
 and `head2` to booleans in the XOR expression.
@@ -62,15 +68,17 @@ pairwise. Well, we already have a pair-wise view of the lists right here in the
 current stack frame, so all we need to do is ask if the current pair is equal
 and if all the rest are equal:
 
-    bool compare_lists(Node* head1, Node* head2) {
-        if(!head1 && !head2)
-            return true;
-        else if(head1 ^ head2)
-            return false;
-        else
-            return head1->data == head2->data
-                && compare_lists(head1->next, head2->next);
-    }
+<pre><code class="c">
+bool compare_lists(Node* head1, Node* head2) {
+    if(!head1 && !head2)
+        return true;
+    else if(head1 ^ head2)
+        return false;
+    else
+        return head1->data == head2->data
+            && compare_lists(head1->next, head2->next);
+}
+</code></pre>
 
 And there you have it!
 
@@ -83,37 +91,41 @@ with the logical equality of the current pair), it can't; we need the recursive
 call to stand on its own. We can do this by adding an accumulator parameter
 (this is my usual go-to for tail call optimization).
 
-    bool compare_lists(Node* head1, Node* head2, bool eq) {
-        if(!head1 && !head2)
-            return true;
-        else if(head1 ^ head2)
-            return false;
-        else
-            return compare_lists(
-              head1->next, head2->next,
-              eq && head1->data == head2->data);
-    }
+<pre><code class="c">
+bool compare_lists(Node* head1, Node* head2, bool eq) {
+    if(!head1 && !head2)
+        return true;
+    else if(head1 ^ head2)
+        return false;
+    else
+        return compare_lists(
+          head1->next, head2->next,
+          eq && head1->data == head2->data);
+}
+</code></pre>
 
 This also opens the door for one more quick optimization: why bother even
 recurring down the rest of the list if you've already encountered an unequal
 pair?
 
-    bool compare_lists(Node* head1, Node* head2) {
-        return compare_listsR(head1, head2, true);
-    }
+<pre><code class="c">
+bool compare_lists(Node* head1, Node* head2) {
+    return compare_listsR(head1, head2, true);
+}
 
-    bool compare_listsR(Node* head1, Node* head2, bool eq) {
-        if(!head1 && !head2)
-            return true;
-        else if(head1 ^ head2)
-            return false;
-        else if(!eq)
-            return false;
-        else
-            return compare_lists(
-              head1->next, head2->next,
-              eq && head1->data == head2->data);
-    }
+bool compare_listsR(Node* head1, Node* head2, bool eq) {
+    if(!head1 && !head2)
+        return true;
+    else if(head1 ^ head2)
+        return false;
+    else if(!eq)
+        return false;
+    else
+        return compare_lists(
+          head1->next, head2->next,
+          eq && head1->data == head2->data);
+}
+</code></pre>
 
 I'm out of time for writing this morning, but I may revisit this afternoon to
 put up some benchmarks for you!
