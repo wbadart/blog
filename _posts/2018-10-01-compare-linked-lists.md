@@ -4,6 +4,7 @@ title:  Comparing Linked Lists in C
 tags:
   - programming
   - c
+  - tutorial
 ---
 
 As I may have mentioned briefly in the Coffee Log, part of my morning routine
