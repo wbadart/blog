@@ -130,7 +130,7 @@ to `.loc` below. Now, we can select by red team destination, and then by time:
 </code></pre>
 
 I think this is the most readable implementation yet, and is the fastest,
-taking only **21.9 seconds** to tag 100,000 netflow events.
+taking only **21.9 seconds** to tag 100,000 netflow events (a 10x speedup).
 
 The moral of the story is that you should give a moment of thought to the
 structure of your data, and how you'll be querying it. Don't just let pandas or
