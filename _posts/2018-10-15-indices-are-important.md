@@ -33,12 +33,13 @@ I've been working with [pandas<i class="fa
 fa-external-link"></i>][pandas]{:target="_blank"}, so here's the above
 expressed with pandas `DataFrame`s:
 
-    def netflow_is_bad(event, window='1 hour'):
-        window = pd.Timedelta(window)
-        redteam_auths = DF_REDTEAM[ (DF_REDTEAM.time <= event.time)
-                                  & (DF_REDTEAM.time >= (event.time - window)
-                                  & (DF_REDTEAM.dest == event.src) ]
-        return not redteam_auths.empty
+<pre><code class="python">def netflow_is_bad(event, window='1 hour'):
+    window = pd.Timedelta(window)
+    redteam_auths = DF_REDTEAM[ (DF_REDTEAM.time <= event.time)
+                              & (DF_REDTEAM.time >= (event.time - window)
+                              & (DF_REDTEAM.dest == event.src) ]
+    return not redteam_auths.empty
+</code></pre>
 
 Here, we query the red team authentication events for records whose timestamp
 is greater than the start of the relevant window and less than the time of the
@@ -82,15 +83,16 @@ column as the index, rather than the default behavior (which is to create a
 `RangeIndex`; number each item sequentially, which adds no particularly useful
 information).
 
-    DF_REDTEAM = pd.read_csv(PATH_REDTEAM, index_col='time', **OTHER_PARAMS)
+<pre><code class="python">DF_REDTEAM = pd.read_csv(PATH_REDTEAM, index_col='time', **OTHER_PARAMS)</code></pre>
 
 Now, instead of masking to select the red team auth events in our window, we
 can just grab a slice:
 
-    def netflow_is_bad(event, window='1 hour'):
-        window = pd.Timedelta(window)
-        redteam_auths = DF_REDTEAM.loc[(event.time - window):event.time]
-        return not redteam_auths[redteam_auths.dest == event.src].empty
+<pre><code class="python">def netflow_is_bad(event, window='1 hour'):
+    window = pd.Timedelta(window)
+    redteam_auths = DF_REDTEAM.loc[(event.time - window):event.time]
+    return not redteam_auths[redteam_auths.dest == event.src].empty
+</code></pre>
 
 This is not only a simpler, more readable implementation, but much faster: only
 1:19" to tag 100,000 netflow events. However, there's still one more linear
@@ -113,17 +115,19 @@ In our case, we want to add the red team auth event's *destination* to the
 index, so we can query by that in constant time. In pandas, it couldn't be
 easier:
 
-    DF_REDTEAM = pd.read_csv(
-        PATH_REDTEAM, index_col=['dest', 'time'], **OTHER_PARAMS)
+<pre><code class="python">DF_REDTEAM = pd.read_csv(
+    PATH_REDTEAM, index_col=['dest', 'time'], **OTHER_PARAMS)
+</code></pre>
 
 Note how the order of `index_col` above corresponds to the order of our calls
 to `.loc` below. Now, we can select by red team destination, and then by time:
 
-    def netflow_is_bad(event, window='1 hour'):
-        window = pd.Timedelta(window)
-        return not DF_REDTEAM.loc[event.src]\
-                             .loc[(event.time - window):event.time]\
-                             .empty
+<pre><code class="python">def netflow_is_bad(event, window='1 hour'):
+    window = pd.Timedelta(window)
+    return not DF_REDTEAM.loc[event.src]\
+                         .loc[(event.time - window):event.time]\
+                         .empty
+</code></pre>
 
 I think this is the most readable implementation yet, and is the fastest,
 taking only **21.9 seconds** to tag 100,000 netflow events.
@@ -137,12 +141,12 @@ power is in your hands!
 
 In the above cases, I've been constructing the tag column with the following:
 
-    DF_NETFLOW['red'] = pd.Series(map(isred, DF_NETFLOW.itertuples()))
+<pre><code class="python">DF_NETFLOW['red'] = pd.Series(map(isred, DF_NETFLOW.itertuples()))</code></pre>
 
 I found that this was faster than `DataFrame.apply`. However, the ideal
 implementation is *vectorized* and operates on the whole data frame at once:
 
-    DF_NETFLOW['red'] = isread(DF_NETFLOW)
+<pre><code class="python">DF_NETFLOW['red'] = isread(DF_NETFLOW)</code></pre>
 
 I couldn't work this out though, since red team query depends on the source of
 an individual netflow event. I haven't yet figured out how to do this on the
