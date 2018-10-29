@@ -141,12 +141,12 @@ power is in your hands!
 
 In the above cases, I've been constructing the tag column with the following:
 
-<pre><code class="python">DF_NETFLOW['red'] = pd.Series(map(isred, DF_NETFLOW.itertuples()))</code></pre>
+<pre><code class="python">DF_NETFLOW['red'] = pd.Series(map(netflow_is_bad, DF_NETFLOW.itertuples()))</code></pre>
 
 I found that this was faster than `DataFrame.apply`. However, the ideal
 implementation is *vectorized* and operates on the whole data frame at once:
 
-<pre><code class="python">DF_NETFLOW['red'] = isread(DF_NETFLOW)</code></pre>
+<pre><code class="python">DF_NETFLOW['red'] = netflow_is_bad(DF_NETFLOW)</code></pre>
 
 I couldn't work this out though, since red team query depends on the source of
 an individual netflow event. I haven't yet figured out how to do this on the
