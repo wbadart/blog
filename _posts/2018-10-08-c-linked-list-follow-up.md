@@ -21,8 +21,7 @@ The basic solution in the simplest terms looks at each pair of elements, and
 asks (1) if they're the same, and (2) if the rest of the list is the same. It's
 so short, I'll just copy it here:
 
-<pre><code class="c">
-bool compare_lists(Node* head1, Node* head2) {
+<pre><code class="c">bool compare_lists(Node* head1, Node* head2) {
     if(!head1 && !head2)
         return true;
     else if(head1 ^ head2)
