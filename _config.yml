@@ -16,6 +16,7 @@ excerpt_separator: <!-- MORE -->
 markdown: kramdown
 plugins:
   - jekyll-paginate
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
