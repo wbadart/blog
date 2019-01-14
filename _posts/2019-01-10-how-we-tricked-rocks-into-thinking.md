@@ -38,7 +38,7 @@ fa-external-link"></i>][twitter]{:target="_blank"} tweet.
 ## Roadmap
 
 We're going to be making this journey one step at a time, and taking
-those steps in order; each successive concept will build of the
+those steps in order; each successive concept will build off the
 previous ones.
 
 We'll start with a quick survey of computing technology through the
