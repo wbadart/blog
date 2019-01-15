@@ -13,7 +13,7 @@ plastic, and semi-conductive material. How do collections of such
 simple molecules give rise to the breathtaking CGI space-scapes of
 *Interstellar*, the vast and omnipresent Internet, and the shrewd,
 [alien<i class="fa fa-external-link"></i>][wired]{:target="_blank"}
-strategy invented by *AlphaGo*?
+Go strategy invented by *AlphaGo*?
 
 [wired]: https://www.wired.com/2016/03/sadness-beauty-watching-googles-ai-play-go
 
@@ -46,6 +46,9 @@ ages. When we reach the 19th century, we're going to slow down and
 dip our toes into the murky waters of Logic Design and explore
 **why** digital computers don't have to be electrical gadgets. With
 that in mind, we're going to design a simple calculator.
+(EDIT Jan 15: [Link][part1])
+
+[part1]: {% post_url 2019-01-14-origins-of-computers %}
 
 Once we've tried our hand at designing a digital system, we're going
 to look at the paradigm behind modern, "general purpose" computers,
