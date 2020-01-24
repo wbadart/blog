@@ -7,6 +7,7 @@ tags:
 categories:
 - hdsk
 ---
+
 In the last post, we examined how software engineers construct
 arguments for correctness. In doing so, we identified
 "well-typedness," the property of a program absent type errors, as a
