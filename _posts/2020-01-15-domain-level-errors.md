@@ -14,6 +14,8 @@ with different levels of experience. During this time, I've observed
 a pain point that seems to afflict these practitioners without regard
 to expertise or experience: **bad error messages**.
 
+<!-- MORE -->
+
 By "bad," I don't mean "useless" or "entirely unhelpful." Usually a
 Python stack trace has enough information to at least point you in
 the right direction for debugging. However:

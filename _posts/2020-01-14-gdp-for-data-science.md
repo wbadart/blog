@@ -18,6 +18,8 @@ domain level, and ruling out error classes at this level of
 abstraction can be very strong evidence for the correctness of a
 program.
 
+<!-- MORE -->
+
 We finally reached an impasse when we needed to start juggling proofs
 of multiple properties of a term. Recall the given example:
 
