@@ -17,6 +17,8 @@ which violate the preconditions of an algorithm.
 Unfortunately, not many data scientists are using Haskell today, so
 to use GDP directly, most teams would have to switch languages.
 
+<!-- MORE -->
+
 This post is for teams who can't afford to switch languages right
 now, but still want to make stronger arguments for the safety and
 correctness of their data science software. Below, we'll be
