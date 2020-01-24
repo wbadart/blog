@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  The Argument from Types
+title:  Domain-Level Errors
 tags:
 - data science
 - software engineering
