@@ -5,7 +5,7 @@ layout: post
 
 I recently took a crack at Thomas Streicher's [_Domain-Theoretic
 Foundations of Functional Programming_<i class="fa
-fa-external-link"></i>][book]{:target="_blank"}_. I can't remember how
+fa-external-link"></i>][book]{:target="_blank"}. I can't remember how
 I happened on it, but it seemed to nicely follow my foray into formal
 methods from last winter. On this first pass, I got through about
 three and a half chapters (if I'm being generous) before everything
