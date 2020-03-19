@@ -39,18 +39,18 @@ semantics to evaluate a term to some value.
 One of the major advantages of considering all this, which might on
 the surface seem to be vapid ceremony on top of an already perfectly
 usable programming language, is that it gives a mathematical
-foundation for testing. When you have a CI server run tests on your
-code, and don't allow merging until the tests pass, you're really
-using unit tests as a means to compare programs, namely, to program
-as it was before your diff, and the "new" program with your diff
-applied. If the new program passes the tests, then we're satisfied
-that it's sufficiently equivalent to the old program. That is, if we
-_observe_ that the new program evaluates to the same values as the
-old, we're satisfied it's equivalent enough on the axes we haven't
-meant to change. An operational semantics gives rise to a formal
-notion of **observational equality** between two programs. For
-programs P and Q, if, for all contexts E, P and Q, evaluated within
-E, yield the same value, then they are observationally equivalent.
+foundation for testing. When you have a continuous integration server
+run tests on your code, and don't allow merging until the tests pass,
+you're really using unit tests as a means to compare programs,
+namely, the program as it was before your diff, and the "new" program
+with your diff applied. If the new program passes the tests, then
+we're satisfied that it's sufficiently equivalent to the old program.
+That is, if we _observe_ that the new program evaluates to the same
+values as the old, we're satisfied it's equivalent enough on the axes
+we haven't meant to change. An operational semantics gives rise to a
+formal notion of **observational equality** between two programs. For
+programs P and Q, if, for all contexts C, P and Q, evaluated within
+C, yield the same value, then they are observationally equivalent.
 This would give us a rigorous formal foundation for constructing
 correctness proofs from things like unit tests, but "context" can be
 a fuzzy thing, and quantifying over the universe of possible contexts
